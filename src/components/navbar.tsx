@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/temp";
 import { supabase } from "../lib/supabase";
 
 function Navbar() {

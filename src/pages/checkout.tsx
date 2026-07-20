@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { supabase } from "../lib/supabase";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/temp";
 
 function Checkout() {
     const { cart, total, clearCart } = useCart();
