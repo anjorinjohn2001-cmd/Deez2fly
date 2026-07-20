@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import { Product as ProductType } from "../types/Product";
 import Loading from "../components/Loading";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/cartContext";
 
 function Product() {
     const { id } = useParams();
@@ -80,8 +80,8 @@ function Product() {
                                     alt=""
                                     onClick={() => setSelectedImage(img)}
                                     className={`cursor-pointer rounded-lg border-2 h-28 w-full object-cover ${selectedImage === img
-                                            ? "border-yellow-500"
-                                            : "border-gray-300"
+                                        ? "border-yellow-500"
+                                        : "border-gray-300"
                                         }`}
                                 />
 
@@ -123,8 +123,8 @@ function Product() {
                                 key={size}
                                 onClick={() => setSelectedSize(size)}
                                 className={`px-5 py-2 rounded border ${selectedSize === size
-                                        ? "bg-black text-white"
-                                        : ""
+                                    ? "bg-black text-white"
+                                    : ""
                                     }`}
                             >
                                 {size}
