@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../lib/supabase";
 import { Product } from "../types/Product";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/TempProductCard";
 import Loading from "../components/Loading";
 
 function Shop() {

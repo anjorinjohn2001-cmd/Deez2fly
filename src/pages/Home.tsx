@@ -5,7 +5,7 @@ import heroImage from "../assets/images/hero.jpg";
 
 import { supabase } from "../lib/supabase";
 import { Product } from "../types/Product";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/TempProductCard";
 
 function Home() {
     const [products, setProducts] = useState<Product[]>([]);

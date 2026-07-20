@@ -4,15 +4,15 @@ import {
   Route,
 } from "react-router-dom";
 
-import Navbar from "./components/Navber";
-import Footer from "./components/Footer";
+import Navbar from "./components/TempNav";
+import Footer from "./components/TempFooter";
 import AdminRoute from "./components/AdminRoute";
 
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
+import Checkout from "./pages/TempCheckout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
