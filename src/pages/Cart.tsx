@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import CartItem from "../components/CartItem";
 
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/CartContext";
 
 
 

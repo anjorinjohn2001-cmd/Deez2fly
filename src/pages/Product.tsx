@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import { Product as ProductType } from "../types/Product";
 import Loading from "../components/Loading";
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/CartContext";
 
 function Product() {
     const { id } = useParams();
