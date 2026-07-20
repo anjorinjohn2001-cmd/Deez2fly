@@ -1,6 +1,6 @@
 import { Product } from "../types/product";
 
-import { useCart } from "../context/temp";
+import { useCart } from "../context/CartContext";
 
 
 interface CartProduct extends Product {
