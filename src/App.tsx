@@ -1,7 +1,7 @@
 import {
-  BrowserRouter,
-  Routes,
-  Route,
+    BrowserRouter,
+    Routes,
+    Route,
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -10,6 +10,7 @@ import AdminRoute from "./components/AdminRoute";
 
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
+import About from "./pages/About";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
@@ -22,78 +23,68 @@ import AddProduct from "./admin/AddProduct";
 import EditProduct from "./admin/EditProduct";
 
 function App() {
-  return (
-    <BrowserRouter>
+    return (
+        <BrowserRouter>
 
-      <Navbar />
+            <Navbar />
 
-      <main className="min-h-screen">
+            <main className="min-h-screen">
 
-        <Routes>
+                <Routes>
 
-          {/* Customer Pages */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/product/:id" element={<Product />} />
+                    <Route path="/cart" element={<Cart />} />
+                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
 
-          <Route path="/" element={<Home />} />
+                    <Route
+                        path="/admin"
+                        element={
+                            <AdminRoute>
+                                <Dashboard />
+                            </AdminRoute>
+                        }
+                    />
 
-          <Route path="/shop" element={<Shop />} />
+                    <Route
+                        path="/admin/products"
+                        element={
+                            <AdminRoute>
+                                <Products />
+                            </AdminRoute>
+                        }
+                    />
 
-          <Route path="/product/:id" element={<Product />} />
+                    <Route
+                        path="/admin/add"
+                        element={
+                            <AdminRoute>
+                                <AddProduct />
+                            </AdminRoute>
+                        }
+                    />
 
-          <Route path="/cart" element={<Cart />} />
+                    <Route
+                        path="/admin/edit/:id"
+                        element={
+                            <AdminRoute>
+                                <EditProduct />
+                            </AdminRoute>
+                        }
+                    />
 
-          <Route path="/checkout" element={<Checkout />} />
+                </Routes>
 
-          <Route path="/login" element={<Login />} />
+            </main>
 
-          <Route path="/register" element={<Register />} />
+            <Footer />
 
-          {/* Protected Admin Pages */}
-
-          <Route
-            path="/admin"
-            element={
-              <AdminRoute>
-                <Dashboard />
-              </AdminRoute>
-            }
-          />
-
-          <Route
-            path="/admin/products"
-            element={
-              <AdminRoute>
-                <Products />
-              </AdminRoute>
-            }
-          />
-
-          <Route
-            path="/admin/add"
-            element={
-              <AdminRoute>
-                <AddProduct />
-              </AdminRoute>
-            }
-          />
-
-          <Route
-            path="/admin/edit/:id"
-            element={
-              <AdminRoute>
-                <EditProduct />
-              </AdminRoute>
-            }
-          />
-
-        </Routes>
-
-      </main>
-
-      <Footer />
-
-    </BrowserRouter>
-  );
+        </BrowserRouter>
+    );
 }
 
 export default App;
-// Trigger deployment

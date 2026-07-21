@@ -32,20 +32,11 @@ function About() {
                 <p>
                     From everyday essentials to bold statement pieces, our mission is
                     to deliver apparel that reflects ambition, authenticity, and the
-                    fearless spirit of those who refuse to blend in. We are committed
-                    to creating timeless streetwear that inspires people to move
-                    differently, think boldly, and embrace their own unique journey.
-                </p>
-
-                <p>
-                    As we continue to grow, our goal remains the same: to build a
-                    community united by confidence, creativity, and the desire to
-                    always rise above the ordinary.
+                    fearless spirit of those who refuse to blend in.
                 </p>
 
             </div>
 
-            {/* Values */}
             <div className="mt-20">
                 <h2 className="text-3xl font-bold mb-8 text-center">
                     Our Values
@@ -59,9 +50,8 @@ function About() {
                         </h3>
 
                         <p className="text-gray-600">
-                            Every product is crafted using carefully selected
-                            materials to ensure lasting comfort, durability,
-                            and style.
+                            Every product is crafted using carefully selected materials
+                            to ensure lasting comfort, durability and style.
                         </p>
                     </div>
 
@@ -71,8 +61,8 @@ function About() {
                         </h3>
 
                         <p className="text-gray-600">
-                            We create unique designs that allow every customer
-                            to express their individuality with confidence.
+                            We create unique designs that allow every customer to
+                            express individuality with confidence.
                         </p>
                     </div>
 
@@ -83,7 +73,7 @@ function About() {
 
                         <p className="text-gray-600">
                             Our clothing is designed to inspire boldness,
-                            self-belief, and the confidence to stand out.
+                            self-belief and confidence.
                         </p>
                     </div>
 
@@ -93,27 +83,23 @@ function About() {
                         </h3>
 
                         <p className="text-gray-600">
-                            DEEZ2FLY™️ is more than a clothing brand—it's a
-                            community of ambitious people who choose to think
-                            differently and live boldly.
+                            DEEZ2FLY™️ is more than clothing—it's a community.
                         </p>
                     </div>
 
                 </div>
             </div>
 
-            {/* Motto */}
             <div className="mt-20 text-center">
                 <h2 className="text-4xl font-extrabold">
                     DEEZ2FLY™️
                 </h2>
 
-                <p className="mt-4 text-xl text-gray-600 italic">
+                <p className="mt-4 text-xl italic text-gray-600">
                     Wear the Vision. Live the Lifestyle. Fly Beyond Limits.
                 </p>
             </div>
 
-            {/* Contact */}
             <div className="mt-20">
                 <h2 className="text-3xl font-bold mb-6">
                     Contact Us
@@ -125,7 +111,7 @@ function About() {
                         href="https://instagram.com/deez_2fly"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-blue-600 text-lg hover:underline"
+                        className="block text-blue-600 hover:underline"
                     >
                         Instagram
                     </a>
@@ -134,7 +120,7 @@ function About() {
                         href="https://wa.me/2347012908531"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-green-600 text-lg hover:underline"
+                        className="block text-green-600 hover:underline"
                     >
                         WhatsApp
                     </a>
